@@ -3,8 +3,9 @@
 # Quick Sort — Partición de Lomuto
 
 <p>👉 "Visitar mi portafolio" (https://xyvenqorix.vercel.app</p>
-![Quick Sort](includes/image/tu-imagen.png)
 
+
+![Quick Sort](includes/image/tu-imagen.png)
 
 
 ```text
