@@ -4,7 +4,7 @@
 
 <p>Visitar mi portafolio (https://xyvenqorix.vercel.app</p>
 
-<p>![Quick Sort](includes/image/tu-imagen.png)</p>
+![Quick Sort](includes/image/tu-imagen.png)
 
 
 ```text
