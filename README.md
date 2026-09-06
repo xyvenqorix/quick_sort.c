@@ -3,9 +3,6 @@
 # Quise Replicar Este proyecto de Facebook Que me llamó la atención y Solo para practicar 
 # Quick Sort — Partición de Lomuto
 
-![Quick Sort](includes/image/tu-imagen.png)
-
-
 ```text
 mi-proyecto/
 ├── index.html
@@ -15,3 +12,8 @@ mi-proyecto/
     ├── script.js
     └── image/
         └── tu-imagen.png
+
+![Quick Sort](includes/image/tu-imagen.png)
+
+
+
