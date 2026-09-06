@@ -1,4 +1,5 @@
 # Quick Sort — Partición de Lomuto
+# Quise Replicar Este proyecto de Facebook Que me llamó la atención y Solo para practicar 
 
 Visualizador interactivo de **Quick Sort** con partición de Lomuto.
 
