@@ -3,8 +3,6 @@
 
 Visualizador interactivo de **Quick Sort** con partición de Lomuto.
 
-## 🖼️ Vista previa
-
 ![Quick Sort](includes/image/tu-imagen.png)
 
 ## 📁 Estructura
