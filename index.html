@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Quick Sort — Partición de Lomuto</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+  <main class="main">
+
+    <section class="title">
+      <h1>QUICK SORT</h1>
+      <div class="subtitle">PARTICIÓN DE LOMUTO</div>
+    </section>
+
+    <section class="stats">
+      <div class="stat">Compara <strong id="comp">0</strong></div>
+      <div class="stat">Cambia <strong id="swap">0</strong></div>
+    </section>
+
+    <section class="visual">
+      <div id="bars" class="bars"></div>
+
+      <div class="pointer" id="pointer">
+        <div class="cap"></div>
+        <div class="line"></div>
+        <div class="foot"></div>
+      </div>
+    </section>
+
+    <section>
+
+      <div class="code">
+
+        <div class="codehead">
+          <i class="dot"></i>
+          <i class="dot"></i>
+          <i class="dot"></i>
+          <span>quick_sort.c</span>
+        </div>
+
+        <div class="codebody" id="code">
+
+          <div class="line" data-l="1">
+            <span class="numline">1</span>
+            <span class="txt">
+              <span class="kw">void</span>
+              <span class="fn">quick_sort</span>(<span class="kw">int</span> a[], <span class="kw">int</span> lo, <span class="kw">int</span> hi)
+            </span>
+          </div>
+
+          <div class="line" data-l="2">
+            <span class="numline">2</span>
+            <span class="txt">{</span>
+          </div>
+
+          <div class="line" data-l="3">
+            <span class="numline">3</span>
+            <span class="txt">
+              <span class="kw">if</span> (lo &gt;= hi)
+              <span class="kw">return</span>;
+            </span>
+          </div>
+
+          <div class="line" data-l="4">
+            <span class="numline">4</span>
+            <span class="txt">
+              <span class="kw">int</span> p = a[hi], i = lo;
+              <span class="cm">// el pivote</span>
+            </span>
+          </div>
+
+          <div class="line" data-l="5">
+            <span class="numline">5</span>
+            <span class="txt">
+              <span class="kw">for</span> (<span class="kw">int</span> j = lo; j &lt; hi; j++)
+            </span>
+          </div>
+
+          <div class="line" data-l="6">
+            <span class="numline">6</span>
+            <span class="txt">
+              <span class="kw">if</span> (a[j] &lt; p) {
+            </span>
+          </div>
+
+          <div class="line" data-l="7">
+            <span class="numline">7</span>
+            <span class="txt">
+              <span class="fn">swap</span>(&amp;a[i], &amp;a[j]);
+            </span>
+          </div>
+
+          <div class="line" data-l="8">
+            <span class="numline">8</span>
+            <span class="txt">i++;</span>
+          </div>
+
+          <div class="line" data-l="9">
+            <span class="numline">9</span>
+            <span class="txt">}</span>
+          </div>
+
+          <div class="line" data-l="10">
+            <span class="numline">10</span>
+            <span class="txt">
+              <span class="fn">swap</span>(&amp;a[i], &amp;a[hi]);
+            </span>
+          </div>
+
+          <div class="line" data-l="11">
+            <span class="numline">11</span>
+            <span class="txt">
+              <span class="fn">quick_sort</span>(a, lo, i - 1);
+            </span>
+          </div>
+
+          <div class="line" data-l="12">
+            <span class="numline">12</span>
+            <span class="txt">
+              <span class="fn">quick_sort</span>(a, i + 1, hi);
+            </span>
+          </div>
+
+          <div class="line" data-l="13">
+            <span class="numline">13</span>
+            <span class="txt">}</span>
+          </div>
+
+        </div>
+
+        <div class="codefoot">
+          <span>
+            lo = <b id="lo">0</b>
+            &nbsp; hi = <b id="hi">7</b>
+            &nbsp; i = <b id="ii">0</b>
+            &nbsp; j = <b id="jj">0</b>
+          </span>
+
+          <span class="p">
+            p = <b id="pv">4</b>
+          </span>
+        </div>
+
+      </div>
+
+      <div class="note" id="note">
+        EL ÚLTIMO DE LA LISTA ES EL PIVOTE
+      </div>
+
+    </section>
+
+    <div class="controls">
+
+      <button class="primary" id="start">
+        ▶ INICIAR
+      </button>
+
+      <button id="pause">
+        Ⅱ PAUSAR
+      </button>
+
+      <button id="reset">
+        ↻ REINICIAR
+      </button>
+
+      <button id="new">
+        🎲 NUEVO
+      </button>
+
+      <span class="speed">
+        Velocidad
+        <input id="speed" type="range" min="1" max="10" value="6">
+      </span>
+
+    </div>
+
+  </main>
+</div>
+
+<script src="includes/script.js"></script>
+
+</body>
+</html>
