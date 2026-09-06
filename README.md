@@ -1,13 +1,26 @@
 # Quick Sort — Partición de Lomuto
 # Quise Replicar Este proyecto de Facebook Que me llamó la atención y Solo para practicar 
 
-Visualizador interactivo de **Quick Sort** con partición de Lomuto.
+"Quick Sort" (includes/image/tu-imagen.png)
 
-![Quick Sort](includes/image/tu-imagen.png)
+🌐 Mi portafolio
 
-## 📁 Estructura
+Puedes conocer más de mis proyectos y trabajos en mi portafolio:
 
-```text
+👉 "Visitar mi portafolio" (https://xyvenqorix.vercel.app)
+
+✨ Características
+
+- Visualización animada de Quick Sort.
+- Pivote de Lomuto resaltado.
+- Comparaciones y cambios en tiempo real.
+- Controles para iniciar, pausar y reiniciar.
+- Generación de nuevos arreglos.
+- Control de velocidad.
+- Diseño adaptable para móvil y PC.
+
+📁 Estructura
+
 mi-proyecto/
 ├── index.html
 ├── README.md
@@ -15,4 +28,4 @@ mi-proyecto/
     ├── style.css
     ├── script.js
     └── image/
-        └── tu-imagen.png  
+        └── tu-imagen.png
